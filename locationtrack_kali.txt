@@ -1,0 +1,10 @@
+//copy  “git clone git clone https://github.com/thewhiteh4t/seeker.git” from github
+
+cd seeker/
+apt update
+apt install python3 python3-pip php // download python and pip
+pip3 install requests
+python3 seeker.py -t manual //to open the tool
+
+//Seeker tool will be opened the select the option 1 which is for google drive, then
+paste it in the terminal.
