@@ -1,0 +1,17 @@
+// few nmap commands (Nmap - an open-source network scanning tool that is popularly used by network administrators, hackers, and cyber security experts to map networks)  
+
+sudo apt-get install nmap
+
+nmap <sitename> //To scan a System with Hostname 
+
+nmap < ip address> //To scan a System with Ipaddress
+
+nmap <address1 address2...> //To scan multiple hosts  
+
+nmap <IP range> //IP Address Range
+
+nmap -p <numeric value> <IP> // a specific port
+
+nmap — open<IP address> //To detect open ports.
+
+
