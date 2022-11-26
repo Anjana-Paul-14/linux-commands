@@ -1,0 +1,11 @@
+File Carving using Foremost using linux
+
+sudo apt -get install foremost //Install the foremost tool 
+
+cd desktop //Copy the target.img file to the desktop.
+
+foremost -t jpg,png,gif -o flashoutput imagename.img //Run the command to carve the img file and the process will begin.
+
+flashoutput //Once the process has been completed check the desktop for a folder name
+
+//In that folder there will be an audit.txt file and different folders according the file types specified in the first command and analyse it for more information.
