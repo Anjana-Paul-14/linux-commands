@@ -1,0 +1,15 @@
+//Kali Linux machine
+
+sudo apt install iptables //Install Iptables
+ 
+sudo iptables -L -n -v // To check the current status of the firewall
+
+sudo iptables -A INPUT -p icmp -i eth0 -j DROP //To block ICMP request
+
+sudo iptables-A FORWARD -i eth1 -o eth0 -m mac --mac-source 00:00:00:00:00:00 -j DROP //block a specific MAC address
+
+sudo iptables -A INPUT -m conntrack --ctstate INVALID -j DROP //To drop Invalid Packets
+
+sudo iptables -A INPUT -i eth0 -s 192.168.0.106 -j DROP //To block connection on Network Interface
+
+sudo iptables -F //To flush all the iptables rules:
